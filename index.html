@@ -1,0 +1,1862 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ремонт квартир под ключ</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/choices.min.css">
+    <link rel="stylesheet" href="./css/jquery.fancybox.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__container">
+                <div class="header__logo">
+                    <a href="/" class="header__logo-link">
+                        <img src="./img/svg/header-logo.svg" alt="Header Logo">
+                    </a>
+                </div>
+                <div class="header__menu navigation">
+                    <nav class="navigation__menu">
+                        <ul class="navigation__items">
+                            <li class="navigation__item">
+                                <a href="#about" class="navigation__link js-scroll">
+                                    О нас
+                                </a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#price" class="navigation__link js-scroll">
+                                    Цены
+                                </a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#steps" class="navigation__link js-scroll">
+                                    Качество
+                                </a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#portfolio" class="navigation__link js-scroll">
+                                    Галерея
+                                </a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#calculator" class="navigation__link js-scroll">
+                                    Калькулятор
+                                </a>    
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#reviews" class="navigation__link js-scroll">
+                                    Отзывы
+                                </a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#map" class="navigation__link js-scroll">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div> 
+                <div class="header__right-element">
+                    <div class="header__socials socials">
+                        <div class="socials__items">
+                            <div class="socials__item">
+                                <a href="#!" class="socials__link" target="_blank">
+                                    <img src="./img/svg/telegram-ico.svg" alt="Telegram">
+                                </a>
+                            </div>
+                            <div class="socials__item">
+                                <a href="#!" class="socials__link" target="_blank">
+                                    <img src="./img/svg/whatsapp-ico.svg" alt="WhatsApp">
+                                </a>
+                            </div>
+                            <div class="socials__item">
+                                <a href="#!" class="socials__link" target="_blank">
+                                    <img src="./img/svg/instagram-ico.svg" alt="Instagram">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#calculator" class="header__calc-hidden js-scroll">
+                        Калькулятор
+                    </a>
+                    <a href="tel:+79999999999" class="header__phone-hidden phone">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="#000" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.6693 14.0998L13.562 10.3654C13.3679 10.1889 13.1127 10.0948 12.8505 10.1029C12.5882 10.111 12.3394 10.2207 12.1565 10.4089L11.2405 11.3509C10.3029 12.3151 8.88669 12.8019 7.77527 12.0445C7.45508 11.8263 7.11997 11.5551 6.78216 11.2182C6.44151 10.8773 6.16804 10.5389 5.94853 10.2159C5.19611 9.10862 5.68124 7.70062 6.64046 6.76677L7.58948 5.84284C7.77783 5.66009 7.88768 5.41122 7.89579 5.14891C7.9039 4.88659 7.80963 4.63141 7.63292 4.43737L3.89946 0.331101C3.72268 0.136454 3.47698 0.0183856 3.21455 0.00197209C2.95212 -0.0144414 2.69363 0.0720926 2.49398 0.243196L0.301387 2.12355C0.126699 2.29887 0.0224326 2.53221 0.00836817 2.7793C-0.00678798 3.0319 -0.295765 9.01551 4.34404 13.6573C8.39174 17.704 13.462 18 14.8584 18C15.0625 18 15.1878 17.9939 15.2211 17.9919C15.4682 17.9781 15.7014 17.8734 15.8758 17.6979L17.7552 15.5043C17.927 15.3053 18.0142 15.047 17.9981 14.7846C17.9821 14.5222 17.8641 14.2765 17.6693 14.0998Z" />
+                            </svg>
+                    </a>
+                    <a href="tel:+79999999999" class="header__phone phone">
+                        <span  class="phone__link">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="#000" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.6693 14.0998L13.562 10.3654C13.3679 10.1889 13.1127 10.0948 12.8505 10.1029C12.5882 10.111 12.3394 10.2207 12.1565 10.4089L11.2405 11.3509C10.3029 12.3151 8.88669 12.8019 7.77527 12.0445C7.45508 11.8263 7.11997 11.5551 6.78216 11.2182C6.44151 10.8773 6.16804 10.5389 5.94853 10.2159C5.19611 9.10862 5.68124 7.70062 6.64046 6.76677L7.58948 5.84284C7.77783 5.66009 7.88768 5.41122 7.89579 5.14891C7.9039 4.88659 7.80963 4.63141 7.63292 4.43737L3.89946 0.331101C3.72268 0.136454 3.47698 0.0183856 3.21455 0.00197209C2.95212 -0.0144414 2.69363 0.0720926 2.49398 0.243196L0.301387 2.12355C0.126699 2.29887 0.0224326 2.53221 0.00836817 2.7793C-0.00678798 3.0319 -0.295765 9.01551 4.34404 13.6573C8.39174 17.704 13.462 18 14.8584 18C15.0625 18 15.1878 17.9939 15.2211 17.9919C15.4682 17.9781 15.7014 17.8734 15.8758 17.6979L17.7552 15.5043C17.927 15.3053 18.0142 15.047 17.9981 14.7846C17.9821 14.5222 17.8641 14.2765 17.6693 14.0998Z" />
+                            </svg>
+                            +7 (999) 999-99-99
+                        </span>
+                    </a>
+                    <button class="burger" type="button" id="navToggle">
+                        <span class="burger__item"></span>
+                    </button>
+                    <div class="sidebar__layout"></div>
+                    <div class="sidebar">
+                        <ul class="menu">
+                            <li><a href="#about" class="navigation__link js-scroll">О нас</a></li>
+                            <li><a href="#price" class="navigation__link js-scroll">Цены</a></li>
+                            <li><a href="#steps" class="navigation__link js-scroll">Качество</a></li>
+                            <li><a href="#portfolio" class="navigation__link js-scroll">Галерея</a></li>
+                            <li><a href="#calculator" class="navigation__link js-scroll">Калькулятор</a></li>
+                            <li><a href="#reviews" class="navigation__link js-scroll">Отзывы</a></li>
+                            <li><a href="#map" class="navigation__link js-scroll">Контакты</a></li>
+                        </ul>
+                        <div class="contact__wrapper">
+                            <div class="contact__item contact__item-1">
+                                <a href="tel:+79999999999" class="contact__phone">+7 (999) 999-99-99</a>
+                            </div>
+                            <div class="contact__item contact__item-2">
+                                <p class="contact__time">без выходных с 8:00 до 20:00</p>
+                            </div>
+                            <div class="contact__item contact__item-3">
+                                <p class="contact__time">г. Новосибирск, ул. Ленина, 1 офис 1</p>
+                            </div>
+                        </div>
+                        <div class="socials__items">
+                            <div class="socials__item">
+                                <a href="#!" class="socials__link" target="_blank">
+                                    <img src="./img/svg/telegram-ico.svg" alt="Telegram">
+                                </a>
+                            </div>
+                            <div class="socials__item">
+                                <a href="#!" class="socials__link" target="_blank">
+                                    <img src="./img/svg/whatsapp-ico.svg" alt="WhatsApp">
+                                </a>
+                            </div>
+                            <div class="socials__item">
+                                <a href="#!" class="socials__link" target="_blank">
+                                    <img src="./img/svg/instagram-ico.svg" alt="Instagram">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="header-banner">
+        <div class="header-banner__wrapper header-slider">
+            <div class="header-slider__item header-slider__item-1">
+                <div class="container">
+                    <div class="header-slider__wrapper">
+                        <div class="header-slider__text">
+                            <a href="#!" class="header-slider__pricelink">
+                                Цены
+                            </a>
+                            <h1 class="header-slider__title">
+                                Ремонт квартир под ключ
+                            </h1>
+                            <div class="header-slider__pricecircle">
+                                <span class="header-slider__price">
+                                    от 2900 руб/м²
+                                </span>
+                                <span class="header-slider__circle">
+                                </span>
+                            </div>
+                            <p class="header-slider__desc">
+                                в Москве и Подмосковье с гарантией качества и сроков
+                            </p>
+                            <a href="#calculator" class="header-slider__btn js-scroll">
+                                <span>Расчитать стоимость</span>
+                            </a>
+                        </div>
+                        <div class="header-slider__pic header-circle">
+                            <div class="header-circle__wrapper">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-slider__item header-slider__item-2">
+                <div class="container">
+                    <div class="header-slider__wrapper">
+                        <div class="header-slider__text">
+                            <a href="#!" class="header-slider__pricelink">
+                                Цены
+                            </a>
+                            <h1 class="header-slider__title">
+                                Дизайн-проект
+                            </h1>
+                            <div class="header-slider__pricecircle">
+                                <span class="header-slider__price">
+                                    Скидка 50%
+                                </span>
+                                <span class="header-slider__circle">
+                                </span>
+                            </div>
+                            <p class="header-slider__desc">
+                                Подбор материалов под Ваш бюджет <br>
+                                Выезд и консультация дизайнера бесплатно
+                            </p>
+                            <a href="#!" class="header-slider__btn popup-btn">
+                                <span>Хочу скидку!</span>
+                            </a>
+                            <span class="header-slider__ps"> * подробности акции уточняйте у оператора</span>
+                        </div>
+                        <div class="header-slider__pic header-circle">
+                            <div class="header-circle__wrapper">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-slider__item header-slider__item-3">
+                <div class="container">
+                    <div class="header-slider__wrapper">
+                        <div class="header-slider__text">
+                            <a href="#!" class="header-slider__pricelink">
+                                Цены
+                            </a>
+                            <h1 class="header-slider__title">
+                                Ремонт в новостройке
+                            </h1>
+                            <div class="header-slider__pricecircle">
+                                <span class="header-slider__price">
+                                    Скидка 5%
+                                </span>
+                                <span class="header-slider__circle">
+                                </span>
+                            </div>
+                            <p class="header-slider__desc">
+                                Делаем скидку — приближаем мечту
+                            </p>
+                            <a href="#!" class="header-slider__btn popup-btn">
+                                <span>Хочу скидку!</span>
+                            </a>
+                            <span class="header-slider__ps"> * подробности акции уточняйте у оператора</span>
+                        </div>
+                        <div class="header-slider__pic header-circle">
+                            <div class="header-circle__wrapper">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-slider__item header-slider__item-4">
+                <div class="container">
+                    <div class="header-slider__wrapper">
+                        <div class="header-slider__text">
+                            <a href="#!" class="header-slider__pricelink">
+                                Цены
+                            </a>
+                            <h1 class="header-slider__title">
+                                Ветеранам и инвалидам
+                            </h1>
+                            <div class="header-slider__pricecircle">
+                                <span class="header-slider__price">
+                                    Скидка 10%
+                                </span>
+                                <span class="header-slider__circle">
+                                </span>
+                            </div>
+                            <p class="header-slider__desc">
+                                Уважение и помощь, вместо слов
+                            </p>
+                            <a href="#!" class="header-slider__btn popup-btn">
+                                <span>Хочу скидку!</span>
+                            </a>
+                            <span class="header-slider__ps"> * подробности акции уточняйте у оператора</span>
+                        </div>
+                        <div class="header-slider__pic header-circle">
+                            <div class="header-circle__wrapper">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="main">
+        <section class="section about" id="about">
+            <div class="container">
+                <div class="about__wrapper">
+                    <h2 class="about__title title-h2">
+                        О компании
+                    </h2>
+                    <div class="about__columns">
+                        <div class="about__column">
+                            <div class="about__column-wrapper">
+                                <h3 class="about__column-title">
+                                    Столичный мастер
+                                </h3>
+                                <p class="about__column-description">
+                                    Современная строительно–отделочная компания, оказывающая помощь клиентам в создании надежного, безопасного и красивого жилья. Большой опыт, профессиональные мастера, проверенные поставщики и бережное отношение к клиентам делает нас надежным партнером в ремонте.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about__column">
+                            <div class="about__column-wrapper">
+                                <h3 class="about__column-title">
+                                    Наши принципы:
+                                </h3>
+                                <ul class="about__column-list">
+                                    <li class="about__column-items">
+                                        Производство работ высокого качества
+                                    </li>
+                                    <li class="about__column-items">
+                                        Строгое соблюдение сроков
+                                    </li>
+                                    <li class="about__column-items">
+                                        Уважительное и честное отношение к клиентам
+                                    </li>
+                                    <li class="about__column-items">
+                                        Развитие профессиональных качеств наших мастеров
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__cards">
+                        <div class="about__card">
+                            <div class="about__card-wrapper">
+                                <span class="about__card-title odometer-item">
+                                    118
+                                </span>
+                                <p class="about__card-description">
+                                    успешно выполненных проектов
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about__card">
+                            <div class="about__card-wrapper">
+                                <span class="about__card-title odometer-item">
+                                    7
+                                </span>
+                                <p class="about__card-description">
+                                    лет на строительном рынке
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about__card">
+                            <div class="about__card-wrapper">
+                                <span class="about__card-title odometer-item">
+                                    10
+                                </span>
+                                <p class="about__card-description">
+                                    объектов в работе одновременно
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about__card">
+                            <div class="about__card-wrapper">
+                                <span class="about__card-title odometer-item">
+                                    24
+                                </span>
+                                <p class="about__card-description">
+                                    профессиональных мастера
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about__card">
+                            <div class="about__card-wrapper">
+                                <span class="about__card-title odometer-item">
+                                    5000 
+                                </span>
+                                <span class="about__card-title-item">M<sup>2</sup></span>
+                                <p class="about__card-description">
+                                    ремонта закончено в срок
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section price" id="price">
+            <div class="container">
+                <div class="price__wrapper">
+                    <h2 class="price__title title-h2">
+                        Цены на комплексный ремонт
+                    </h2>
+                    <div class="price__cards">
+                        <div class="price__card price__card-1">
+                            <div class="price__card-visible active">
+                                <div class="price__card-header">
+                                    <h4 class="price__card-title">
+                                        Черновой
+                                    </h4>
+                                </div>
+                                <div class="price__card-border">
+                                    <div class="price__card-image">
+                                        <img src="./img/price-pic-1.jpg" alt="Черновая отделка" class="price__card-pic">
+                                    </div>
+                                    <div class="price__card-main">
+                                        <div class="price__card-desc">
+                                            <p class="price__card-text">
+                                                Делаем все «грязные» и «мокрые работы» и оставляем все хорошо просохнуть.
+                                            </p>
+                                        </div>
+                                        <div class="price__card-more">
+                                            <a href="#!">
+                                                Подробнее
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="price__card-price">
+                                        <div class="price__card-how">
+                                            <span>
+                                                от 2900 ₽ за м²
+                                            </span>
+                                        </div>
+                                        <a href="#calculator" class="price__card-price-btn js-scroll" data-n="3000">
+                                            <span>
+                                                Выбрать
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="price__card-hidden">
+                                <div class="price__card-header">
+                                    <h4 class="price__card-title">
+                                        Черновой
+                                    </h4>
+                                    <span></span>
+                                </div>
+                                <div class="hidden-card__body">
+                                    <ul class="hidden-card__items">
+                                        <li class="hidden-card__item">
+                                            <span></span>
+                                            Перегородки
+                                        </li>
+                                        <li class="hidden-card__item">
+                                            <span></span>
+                                            Грунтовка
+                                        </li>
+                                        <li class="hidden-card__item">
+                                            <span></span>
+                                            Штукатурка
+                                        </li>
+                                        <li class="hidden-card__item">
+                                            <span></span>
+                                            Стяжка пола
+                                        </li>
+                                        <li class="hidden-card__item">
+                                            <span></span>
+                                            Отопление
+                                        </li>
+                                        <li class="hidden-card__item">
+                                            <span></span>
+                                            Шумоизоляция
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="price__card price__card-2">
+                            <div class="price__card-visible active">
+                                <div class="price__card-header">
+                                    <h4 class="price__card-title">
+                                        Капитальный
+                                    </h4>
+                                    <b class="price__card-label">
+                                        ХИТ
+                                    </b>
+                                </div>
+                                <div class="price__card-border">
+                                    <div class="price__card-image">
+                                        <img src="./img/price-pic-2.jpg" alt="Черновая отделка" class="price__card-pic">
+                                    </div>
+                                    <div class="price__card-main">
+                                        <div class="price__card-desc">
+                                            <p class="price__card-text">
+                                                Весь комплекс работ. Подходит для ремонта в Новостройке «под ключ» и для капитального ремонта вторичного жилья.
+                                            </p>
+                                        </div>
+                                        <div class="price__card-more">
+                                            <a href="#!">
+                                                Подробнее
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="price__card-price">
+                                        <div class="price__card-how">
+                                            <span>
+                                                от 8000 ₽ за м²
+                                            </span>
+                                        </div>
+                                        <a href="#calculator" class="price__card-price-btn js-scroll" data-n="6000">
+                                            <span>
+                                                Выбрать
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price__card-hidden">
+                                <div class="price__card-header">
+                                    <h4 class="price__card-title">
+                                        Капитальный
+                                    </h4>
+                                    <span></span>
+                                </div>
+                                <div class="hidden-card__body">
+                                    <ul class="hidden-card__items">
+                                        <li class="hidden-card__item">
+                                            <span></span>
+                                            Черновые работы
+                                        </li>
+                                        <li class="hidden-card__item">
+                                            <span></span>
+                                            Электропроводка
+                                        </li>
+                                        <li class="hidden-card__item">
+                                            <span></span>
+                                            Водоснабжение
+                                        </li>
+                                        <li class="hidden-card__item">
+                                            <span></span>
+                                            Вентиляция
+                                        </li>
+                                        <li class="hidden-card__item">
+                                            <span></span>
+                                            Плиточные работы
+                                        </li>
+                                        <li class="hidden-card__item">
+                                            <span></span>
+                                            Шпатлевка
+                                        </li>
+                                        <li class="hidden-card__item">
+                                            <span></span>
+                                            Подготовительные работы
+                                        </li>
+                                        <li class="hidden-card__item">
+                                            <span></span>
+                                            Финишные покрытия
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price__card price__card-3">
+                            <div class="price__card-visible active">
+                                <div class="price__card-header">
+                                    <h4 class="price__card-title">
+                                        Евро (Дизайнерский)
+                                    </h4>
+                                </div>
+                                <div class="price__card-border">
+                                    <div class="price__card-image">
+                                        <img src="./img/price-pic-3.jpg" alt="Черновая отделка" class="price__card-pic">
+                                    </div>
+                                    <div class="price__card-main">
+                                        <div class="price__card-desc">
+                                            <p class="price__card-text">
+                                                Комплексный ремонт с элементами декора и особенными деталями.
+                                            </p>
+                                        </div>
+                                        <div class="price__card-more">
+                                            <a href="#!">
+                                                Подробнее
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="price__card-price">
+                                        <div class="price__card-how">
+                                            <span>
+                                                от 10000 ₽ за м²
+                                            </span>
+                                        </div>
+                                        <a href="#calculator" class="price__card-price-btn js-scroll" data-n="10000">
+                                            <span>
+                                                Выбрать
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price__card-hidden">
+                                <div class="price__card-header">
+                                    <h4 class="price__card-title">
+                                        Евро (Дизайнерский)
+                                    </h4>
+                                    <span></span>
+                                </div>
+                                <div class="hidden-card__body">
+                                    <ul class="hidden-card__items">
+                                        <li class="hidden-card__item">
+                                            <span></span>
+                                            Капитальный ремонт
+                                        </li>
+                                        <li class="hidden-card__item">
+                                            <span></span>
+                                            Дизайнерские решения
+                                        </li>
+                                        <li class="hidden-card__item">
+                                            <span></span>
+                                            Многоуровневые потолки
+                                        </li>
+                                        <li class="hidden-card__item">
+                                            <span></span>
+                                            Декоративные покрытия
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section example">
+            <div class="container">
+                <div class="example__cards">
+                    <div class="example__card example__card-1">
+                        <div class="example__card-wrap">
+                            <h4 class="example__card-title">
+                                Договор
+                            </h4>
+                            <ul>
+                                <li>
+                                    Точная смета
+                                </li>
+                                <li>
+                                    Прописанные сроки
+                                </li>
+                                <li>
+                                    Оплата по акту выполненных работ
+                                </li>
+                                <li>
+                                    Гарантия от 12 месяцев
+                                </li>
+                            </ul>
+                        </div>
+                        <img src="img/example-pic-1.png" alt="Example Pictures">
+                    </div>
+                    <div class="example__card example__card-2">
+                        <div class="example__card-wrap">
+                            <h4 class="example__card-title">
+                                Мастера
+                            </h4>
+                            <ul>
+                                <li>
+                                    Опыт работ в отделке от 3-х лет
+                                </li>
+                                <li>
+                                    Аттестация на нашем спец полигоне
+                                </li>
+                                <li>
+                                    Повышение квалификации каждые 6 месяцев
+                                </li>
+                                <li>
+                                    Порядок и дисциплине на объекте
+                                </li>
+                            </ul>
+                        </div>
+                        <img src="img/example-pic-2.png" alt="Example Pictures">
+                    </div>
+                    <div class="example__card example__card-3">
+                        <div class="example__card-wrap">
+                            <h4 class="example__card-title">
+                                Закупка и доставка материалов
+                            </h4>
+                            <ul>
+                                <li>
+                                    Цены на материалы от производителя
+                                </li>
+                                <li>
+                                    Проверенное качество материалов
+                                </li>
+                                <li>
+                                    Доставка материалов на следующий день
+                                </li>
+                                <li>
+                                    Выкуп оставшегося лишнего материала
+                                </li>
+                            </ul>
+                        </div>
+                        <img src="img/example-pic-3.png" alt="Example Pictures">
+                    </div>
+                    <div class="example__card example__card-4">
+                        <div class="example__card-wrap">
+                            <h4 class="example__card-title">
+                                Контроль качества
+                            </h4>
+                            <ul>
+                                <li>
+                                    Ежедневный фотоотчет в whatsapp
+                                </li>
+                                <li>
+                                    Прораб контролирует все работы
+                                </li>
+                                <li>
+                                    Отдел технического контроля
+                                </li>
+                                <li>
+                                    Служба поддержки клиентов
+                                </li>
+                            </ul>
+                        </div>
+                        <img src="img/example-pic-4.png" alt="Example Pictures">
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <section class="section steps" id="steps">
+            <div class="container">
+                <div class="steps__wrapper">
+                    <h2 class="steps__title title-h2">
+                        Примеры качества разных этапов ремонта
+                    </h2>
+                    <div class="steps__items">
+                        <div class="steps__item steps-sliders">
+                            <div class="steps-sliders__tabs" id="steps-tabs-1">
+                                <h4 class="steps-trigger__title">
+                                    Монтаж перегородок
+                                </h4>
+                                <div class="steps-sliders__slide">
+                                    <a href="./img/steps-slider-pic-1.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-1.jpg" alt="Слайд 1">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-2.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-2.jpg" alt="Слайд 2">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-3.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-3.jpg" alt="Слайд 3">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-4.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-4.jpg" alt="Слайд 4">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="steps-sliders__tabs" id="steps-tabs-2">
+                                <h4 class="steps-trigger__title">
+                                    Штукатурка
+                                </h4>
+                                <div class="steps-sliders__slide">
+                                    <a href="./img/steps-slider-pic-2.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-2.jpg" alt="Слайд 1">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-3.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-3.jpg" alt="Слайд 2">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-4.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-4.jpg" alt="Слайд 3">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-5.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-5.jpg" alt="Слайд 4">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="steps-sliders__tabs" id="steps-tabs-3">
+                                <h4 class="steps-trigger__title">
+                                    Стяжка пола
+                                </h4>
+                                <div class="steps-sliders__slide">
+                                    <a href="./img/steps-slider-pic-3.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-3.jpg" alt="Слайд 1">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-4.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-4.jpg" alt="Слайд 2">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-5.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-5.jpg" alt="Слайд 3">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-6.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-6.jpg" alt="Слайд 4">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="steps-sliders__tabs" id="steps-tabs-4">
+                                <h4 class="steps-trigger__title">
+                                    Электропроводка
+                                </h4>
+                                <div class="steps-sliders__slide">
+                                    <a href="./img/steps-slider-pic-4.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-4.jpg" alt="Слайд 1">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-5.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-5.jpg" alt="Слайд 2">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-6.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-6.jpg" alt="Слайд 3">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-7.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-7.jpg" alt="Слайд 4">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="steps-sliders__tabs" id="steps-tabs-5">
+                                <h4 class="steps-trigger__title">
+                                    Щит
+                                </h4>
+                                <div class="steps-sliders__slide">
+                                    <a href="./img/steps-slider-pic-5.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-5.jpg" alt="Слайд 1">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-6.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-6.jpg" alt="Слайд 2">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-7.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-7.jpg" alt="Слайд 3">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-8.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-8.jpg" alt="Слайд 4">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="steps-sliders__tabs" id="steps-tabs-6">
+                                <h4 class="steps-trigger__title">
+                                    Водоснабжение
+                                </h4>
+                                <div class="steps-sliders__slide">
+                                    <a href="./img/steps-slider-pic-6.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-6.jpg" alt="Слайд 1">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-7.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-7.jpg" alt="Слайд 2">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-8.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-8.jpg" alt="Слайд 3">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-9.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-9.jpg" alt="Слайд 4">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="steps-sliders__tabs" id="steps-tabs-7">
+                                <h4 class="steps-trigger__title">
+                                    Отопление
+                                </h4>
+                                <div class="steps-sliders__slide">
+                                    <a href="./img/steps-slider-pic-7.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-7.jpg" alt="Слайд 1">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-8.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-8.jpg" alt="Слайд 2">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-9.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-9.jpg" alt="Слайд 3">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-10.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-10.jpg" alt="Слайд 4">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="steps-sliders__tabs" id="steps-tabs-8">
+                                <h4 class="steps-trigger__title">
+                                    Плитка
+                                </h4>
+                                <div class="steps-sliders__slide">
+                                    <a href="./img/steps-slider-pic-8.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-8.jpg" alt="Слайд 1">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-9.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-9.jpg" alt="Слайд 2">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-10.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-10.jpg" alt="Слайд 3">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-11.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-11.jpg" alt="Слайд 4">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="steps-sliders__tabs" id="steps-tabs-9">
+                                <h4 class="steps-trigger__title">
+                                    Ламинат
+                                </h4>
+                                <div class="steps-sliders__slide">
+                                    <a href="./img/steps-slider-pic-9.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-9.jpg" alt="Слайд 1">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-10.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-10.jpg" alt="Слайд 2">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-11.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-11.jpg" alt="Слайд 3">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-12.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-12.jpg" alt="Слайд 4">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="steps-sliders__tabs" id="steps-tabs-10">
+                                <h4 class="steps-trigger__title">
+                                    Обои
+                                </h4>
+                                <div class="steps-sliders__slide">
+                                    <a href="./img/steps-slider-pic-10.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-10.jpg" alt="Слайд 1">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-11.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-11.jpg" alt="Слайд 2">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-12.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-12.jpg" alt="Слайд 3">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-1.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-1.jpg" alt="Слайд 4">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="steps-sliders__tabs" id="steps-tabs-11">
+                                <h4 class="steps-trigger__title">
+                                    Окраска
+                                </h4>
+                                <div class="steps-sliders__slide">
+                                    <a href="./img/steps-slider-pic-11.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-11.jpg" alt="Слайд 1">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-12.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-12.jpg" alt="Слайд 2">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-1.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-1.jpg" alt="Слайд 3">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-2.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-2.jpg" alt="Слайд 4">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="steps-sliders__tabs" id="steps-tabs-12">
+                                <h4 class="steps-trigger__title">
+                                    Потолки
+                                </h4>
+                                <div class="steps-sliders__slide">
+                                    <a href="./img/steps-slider-pic-12.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-12.jpg" alt="Слайд 1">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-1.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-1.jpg" alt="Слайд 2">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-2.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-2.jpg" alt="Слайд 3">
+                                    </a>
+                                    <a href="./img/steps-slider-pic-3.jpg" data-fancybox="gallery">
+                                        <img src="./img/steps-slider-pic-3.jpg" alt="Слайд 4">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="steps__item steps-trigger">
+                            <h4 class="steps-trigger__title">
+                                Типы работ
+                            </h4>
+                            <div class="steps-trigger__wrapper">
+                                <a href="#steps-tabs-1" class="steps-trigger__item">
+                                    <img src="./img/svg/types-ico-1.svg" alt="Монтаж перегородок">
+                                    <span>Монтаж перегородок</span>
+                                </a>
+                                <a href="#steps-tabs-2" class="steps-trigger__item">
+                                    <img src="./img/svg/types-ico-2.svg" alt="Штукатурка">
+                                    <span>Штукатурка</span>
+                                </a>
+                                <a href="#steps-tabs-3" class="steps-trigger__item">
+                                    <img src="./img/svg/types-ico-3.svg" alt="Стяжка пола">
+                                    <span>Стяжка пола</span>
+                                </a>
+                                <a href="#steps-tabs-4" class="steps-trigger__item">
+                                    <img src="./img/svg/types-ico-4.svg" alt="Электропроводка">
+                                    <span>Электропроводка</span>
+                                </a>
+                                <a href="#steps-tabs-5" class="steps-trigger__item">
+                                    <img src="./img/svg/types-ico-5.svg" alt="Щит">
+                                    <span>Щит</span>
+                                </a>
+                                <a href="#steps-tabs-6" class="steps-trigger__item">
+                                    <img src="./img/svg/types-ico-6.svg" alt="Водоснабжение">
+                                    <span>Водоснабжение</span>
+                                </a>
+                                <a href="#steps-tabs-7" class="steps-trigger__item">
+                                    <img src="./img/svg/types-ico-7.svg" alt="Отопление">
+                                    <span>Отопление</span>
+                                </a>
+                                <a href="#steps-tabs-8" class="steps-trigger__item">
+                                    <img src="./img/svg/types-ico-8.svg" alt="Плитка">
+                                    <span>Плитка</span>
+                                </a>
+                                <a href="#steps-tabs-9" class="steps-trigger__item">
+                                    <img src="./img/svg/types-ico-9.svg" alt="Ламинат">
+                                    <span>Ламинат</span>
+                                </a>
+                                <a href="#steps-tabs-10" class="steps-trigger__item">
+                                    <img src="./img/svg/types-ico-10.svg" alt="Обои">
+                                    <span>Обои</span>
+                                </a>
+                                <a href="#steps-tabs-11" class="steps-trigger__item">
+                                    <img src="./img/svg/types-ico-11.svg" alt="Окраска">
+                                    <span>Окраска</span>
+                                </a>
+                                <a href="#steps-tabs-12" class="steps-trigger__item">
+                                    <img src="./img/svg/types-ico-12.svg" alt="Потолки">
+                                    <span>Потолки</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <section class="section portfolio" id="portfolio">
+            <div class="container">
+                <div class="portfolio__wrapper">
+                    <h2 class="portfolio__title title-h2">
+                        Галерея работ
+                    </h2>
+                    <div class="portfolio__items">
+                        <div class="portfolio__item portfolio-slider">
+                             <div class="portfolio-sliders__tabs" id="portfolio-tabs-1">
+                                 <div class="portfolio-trigger__info trigger-info">
+                                    <div class="trigger-info__address trigger-info__wrapper">
+                                        <span class="trigger-info__what">
+                                            Объект
+                                        </span>
+                                        <h6 class="trigger-info__title">
+                                            ул. Можайское ш. 51
+                                        </h6>
+                                    </div>
+                                    <div class="trigger-info__area trigger-info__wrapper">
+                                        <span class="trigger-info__what">
+                                            Площадь
+                                        </span>
+                                        <h6 class="trigger-info__title">
+                                            120 м² 
+                                        </h6>
+                                    </div>
+                                    <div class="trigger-info__time trigger-info__wrapper">
+                                        <span class="trigger-info__what">
+                                            Время
+                                        </span>
+                                        <h6 class="trigger-info__title">
+                                            85 дней
+                                        </h6>
+                                    </div>
+                                 </div>
+                                 
+                                 <div class="portfolio-sliders__slide">
+                                    <a href="./img/portfolio-slider-pic-1.jpg" data-fancybox="gallery">
+                                        <img src="./img/portfolio-slider-pic-1.jpg" alt="Слайд 1">
+                                    </a>
+                                    <a href="./img/portfolio-slider-pic-2.jpg" data-fancybox="gallery">
+                                        <img src="./img/portfolio-slider-pic-2.jpg" alt="Слайд 2">
+                                    </a>
+                                    <a href="./img/portfolio-slider-pic-3.jpg" data-fancybox="gallery">
+                                        <img src="./img/portfolio-slider-pic-3.jpg" alt="Слайд 3">
+                                    </a>
+                                    <a href="./img/portfolio-slider-pic-4.jpg" data-fancybox="gallery">
+                                        <img src="./img/portfolio-slider-pic-4.jpg" alt="Слайд 4">
+                                    </a>
+                                 </div>
+                             </div> 
+                             <div class="portfolio-sliders__tabs" id="portfolio-tabs-2">
+                                <div class="portfolio-trigger__info trigger-info">
+                                    <div class="trigger-info__address trigger-info__wrapper">
+                                        <span class="trigger-info__what">
+                                            Объект
+                                        </span>
+                                        <h6 class="trigger-info__title">
+                                            ул. Ленина 12
+                                        </h6>
+                                    </div>
+                                    <div class="trigger-info__area trigger-info__wrapper">
+                                        <span class="trigger-info__what">
+                                            Площадь
+                                        </span>
+                                        <h6 class="trigger-info__title">
+                                            34 м² 
+                                        </h6>
+                                    </div>
+                                    <div class="trigger-info__time trigger-info__wrapper">
+                                        <span class="trigger-info__what">
+                                            Время
+                                        </span>
+                                        <h6 class="trigger-info__title">
+                                            40 дней
+                                        </h6>
+                                    </div>
+                                 </div>
+                                <div class="portfolio-sliders__slide">
+                                    <a href="./img/portfolio-slider-pic-2.jpg" data-fancybox="gallery">
+                                        <img src="./img/portfolio-slider-pic-2.jpg" alt="Слайд 1">
+                                    </a>
+                                    <a href="./img/portfolio-slider-pic-3.jpg" data-fancybox="gallery">
+                                        <img src="./img/portfolio-slider-pic-3.jpg" alt="Слайд 2">
+                                    </a>
+                                    <a href="./img/portfolio-slider-pic-4.jpg" data-fancybox="gallery">
+                                        <img src="./img/portfolio-slider-pic-4.jpg" alt="Слайд 3">
+                                    </a>
+                                    <a href="./img/portfolio-slider-pic-5.jpg" data-fancybox="gallery">
+                                        <img src="./img/portfolio-slider-pic-5.jpg" alt="Слайд 4">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="portfolio-sliders__tabs" id="portfolio-tabs-3">
+                                <div class="portfolio-trigger__info trigger-info">
+                                    <div class="trigger-info__address trigger-info__wrapper">
+                                        <span class="trigger-info__what">
+                                            Объект
+                                        </span>
+                                        <h6 class="trigger-info__title">
+                                            ул. Пр. Дзержинского 22
+                                        </h6>
+                                    </div>
+                                    <div class="trigger-info__area trigger-info__wrapper">
+                                        <span class="trigger-info__what">
+                                            Площадь
+                                        </span>
+                                        <h6 class="trigger-info__title">
+                                            77 м² 
+                                        </h6>
+                                    </div>
+                                    <div class="trigger-info__time trigger-info__wrapper">
+                                        <span class="trigger-info__what">
+                                            Время
+                                        </span>
+                                        <h6 class="trigger-info__title">
+                                            67 дней
+                                        </h6>
+                                    </div>
+                                 </div>
+                                <div class="portfolio-sliders__slide">
+                                    <a href="./img/portfolio-slider-pic-3.jpg" data-fancybox="gallery">
+                                        <img src="./img/portfolio-slider-pic-3.jpg" alt="Слайд 1">
+                                    </a>
+                                    <a href="./img/portfolio-slider-pic-4.jpg" data-fancybox="gallery">
+                                        <img src="./img/portfolio-slider-pic-4.jpg" alt="Слайд 2">
+                                    </a>
+                                    <a href="./img/portfolio-slider-pic-5.jpg" data-fancybox="gallery">
+                                        <img src="./img/portfolio-slider-pic-5.jpg" alt="Слайд 3">
+                                    </a>
+                                    <a href="./img/portfolio-slider-pic-6.jpg" data-fancybox="gallery">
+                                        <img src="./img/portfolio-slider-pic-6.jpg" alt="Слайд 4">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="portfolio-sliders__tabs" id="portfolio-tabs-4">
+                                <div class="portfolio-trigger__info trigger-info">
+                                    <div class="trigger-info__address trigger-info__wrapper">
+                                        <span class="trigger-info__what">
+                                            Объект
+                                        </span>
+                                        <h6 class="trigger-info__title">
+                                            ул. Б. Богаткова 24
+                                        </h6>
+                                    </div>
+                                    <div class="trigger-info__area trigger-info__wrapper">
+                                        <span class="trigger-info__what">
+                                            Площадь
+                                        </span>
+                                        <h6 class="trigger-info__title">
+                                            22 м² 
+                                        </h6>
+                                    </div>
+                                    <div class="trigger-info__time trigger-info__wrapper">
+                                        <span class="trigger-info__what">
+                                            Время
+                                        </span>
+                                        <h6 class="trigger-info__title">
+                                            23 дня
+                                        </h6>
+                                    </div>
+                                 </div>
+                                <div class="portfolio-sliders__slide">
+                                    <a href="./img/portfolio-slider-pic-4.jpg" data-fancybox="gallery">
+                                        <img src="./img/portfolio-slider-pic-4.jpg" alt="Слайд 1">
+                                    </a>
+                                    <a href="./img/portfolio-slider-pic-5.jpg" data-fancybox="gallery">
+                                        <img src="./img/portfolio-slider-pic-5.jpg" alt="Слайд 2">
+                                    </a>
+                                    <a href="./img/portfolio-slider-pic-6.jpg" data-fancybox="gallery">
+                                        <img src="./img/portfolio-slider-pic-6.jpg" alt="Слайд 3">
+                                    </a>
+                                    <a href="./img/portfolio-slider-pic-7.jpg" data-fancybox="gallery">
+                                        <img src="./img/portfolio-slider-pic-7.jpg" alt="Слайд 4">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="portfolio-sliders__tabs" id="portfolio-tabs-5">
+                                <div class="portfolio-trigger__info trigger-info">
+                                    <div class="trigger-info__address trigger-info__wrapper">
+                                        <span class="trigger-info__what">
+                                            Объект
+                                        </span>
+                                        <h6 class="trigger-info__title">
+                                            ул. Затулинка 23
+                                        </h6>
+                                    </div>
+                                    <div class="trigger-info__area trigger-info__wrapper">
+                                        <span class="trigger-info__what">
+                                            Площадь
+                                        </span>
+                                        <h6 class="trigger-info__title">
+                                            87 м² 
+                                        </h6>
+                                    </div>
+                                    <div class="trigger-info__time trigger-info__wrapper">
+                                        <span class="trigger-info__what">
+                                            Время
+                                        </span>
+                                        <h6 class="trigger-info__title">
+                                            85 дней
+                                        </h6>
+                                    </div>
+                                 </div>
+                                <div class="portfolio-sliders__slide">
+                                    <a href="./img/portfolio-slider-pic-5.jpg" data-fancybox="gallery">
+                                        <img src="./img/portfolio-slider-pic-5.jpg" alt="Слайд 1">
+                                    </a>
+                                    <a href="./img/portfolio-slider-pic-6.jpg" data-fancybox="gallery">
+                                        <img src="./img/portfolio-slider-pic-6.jpg" alt="Слайд 2">
+                                    </a>
+                                    <a href="./img/portfolio-slider-pic-7.jpg" data-fancybox="gallery">
+                                        <img src="./img/portfolio-slider-pic-7.jpg" alt="Слайд 3">
+                                    </a>
+                                    <a href="./img/portfolio-slider-pic-8.jpg" data-fancybox="gallery">
+                                        <img src="./img/portfolio-slider-pic-8.jpg" alt="Слайд 4">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="portfolio-sliders__tabs" id="portfolio-tabs-6">
+                                <div class="portfolio-trigger__info trigger-info">
+                                    <div class="trigger-info__address trigger-info__wrapper">
+                                        <span class="trigger-info__what">
+                                            Объект
+                                        </span>
+                                        <h6 class="trigger-info__title">
+                                            ул. Столетова 25
+                                        </h6>
+                                    </div>
+                                    <div class="trigger-info__area trigger-info__wrapper">
+                                        <span class="trigger-info__what">
+                                            Площадь
+                                        </span>
+                                        <h6 class="trigger-info__title">
+                                            62 м² 
+                                        </h6>
+                                    </div>
+                                    <div class="trigger-info__time trigger-info__wrapper">
+                                        <span class="trigger-info__what">
+                                            Время
+                                        </span>
+                                        <h6 class="trigger-info__title">
+                                            45 дней
+                                        </h6>
+                                    </div>
+                                 </div>
+                                <div class="portfolio-sliders__slide">
+                                    <a href="./img/portfolio-slider-pic-6.jpg" data-fancybox="gallery">
+                                        <img src="./img/portfolio-slider-pic-6.jpg" alt="Слайд 1">
+                                    </a>
+                                    <a href="./img/portfolio-slider-pic-7.jpg" data-fancybox="gallery">
+                                        <img src="./img/portfolio-slider-pic-7.jpg" alt="Слайд 2">
+                                    </a>
+                                    <a href="./img/portfolio-slider-pic-8.jpg" data-fancybox="gallery">
+                                        <img src="./img/portfolio-slider-pic-8.jpg" alt="Слайд 3">
+                                    </a>
+                                    <a href="./img/portfolio-slider-pic-1.jpg" data-fancybox="gallery">
+                                        <img src="./img/portfolio-slider-pic-1.jpg" alt="Слайд 4">
+                                    </a>
+                                </div>
+                            </div>  
+                            <div class="portfolio-sliders__tabs" id="portfolio-tabs-7">
+                                <div class="portfolio-trigger__info trigger-info">
+                                    <div class="trigger-info__address trigger-info__wrapper">
+                                        <span class="trigger-info__what">
+                                            Объект
+                                        </span>
+                                        <h6 class="trigger-info__title">
+                                            ул. Лубянка 1
+                                        </h6>
+                                    </div>
+                                    <div class="trigger-info__area trigger-info__wrapper">
+                                        <span class="trigger-info__what">
+                                            Площадь
+                                        </span>
+                                        <h6 class="trigger-info__title">
+                                            65 м² 
+                                        </h6>
+                                    </div>
+                                    <div class="trigger-info__time trigger-info__wrapper">
+                                        <span class="trigger-info__what">
+                                            Время
+                                        </span>
+                                        <h6 class="trigger-info__title">
+                                            85 дней
+                                        </h6>
+                                    </div>
+                                 </div>
+                                <div class="portfolio-sliders__slide">
+                                    <a href="./img/portfolio-slider-pic-7.jpg" data-fancybox="gallery">
+                                        <img src="./img/portfolio-slider-pic-7.jpg" alt="Слайд 1">
+                                    </a>
+                                    <a href="./img/portfolio-slider-pic-8.jpg" data-fancybox="gallery">
+                                        <img src="./img/portfolio-slider-pic-8.jpg" alt="Слайд 2">
+                                    </a>
+                                    <a href="./img/portfolio-slider-pic-1.jpg" data-fancybox="gallery">
+                                        <img src="./img/portfolio-slider-pic-1.jpg" alt="Слайд 3">
+                                    </a>
+                                    <a href="./img/portfolio-slider-pic-2.jpg" data-fancybox="gallery">
+                                        <img src="./img/portfolio-slider-pic-2.jpg" alt="Слайд 4">
+                                    </a>
+                                </div>
+                            </div>  
+                            <div class="portfolio-sliders__tabs" id="portfolio-tabs-8">
+                                <div class="portfolio-trigger__info trigger-info">
+                                    <div class="trigger-info__address trigger-info__wrapper">
+                                        <span class="trigger-info__what">
+                                            Объект
+                                        </span>
+                                        <h6 class="trigger-info__title">
+                                            ул. Красный пр-т 52
+                                        </h6>
+                                    </div>
+                                    <div class="trigger-info__area trigger-info__wrapper">
+                                        <span class="trigger-info__what">
+                                            Площадь
+                                        </span>
+                                        <h6 class="trigger-info__title">
+                                            32 м² 
+                                        </h6>
+                                    </div>
+                                    <div class="trigger-info__time trigger-info__wrapper">
+                                        <span class="trigger-info__what">
+                                            Время
+                                        </span>
+                                        <h6 class="trigger-info__title">
+                                            85 дней
+                                        </h6>
+                                    </div>
+                                 </div>
+                                <div class="portfolio-sliders__slide">
+                                    <a href="./img/portfolio-slider-pic-8.jpg" data-fancybox="gallery">
+                                        <img src="./img/portfolio-slider-pic-8.jpg" alt="Слайд 1">
+                                    </a>
+                                    <a href="./img/portfolio-slider-pic-2.jpg" data-fancybox="gallery">
+                                        <img src="./img/portfolio-slider-pic-2.jpg" alt="Слайд 2">
+                                    </a>
+                                    <a href="./img/portfolio-slider-pic-3.jpg" data-fancybox="gallery">
+                                        <img src="./img/portfolio-slider-pic-3.jpg" alt="Слайд 3">
+                                    </a>
+                                    <a href="./img/portfolio-slider-pic-4.jpg" data-fancybox="gallery">
+                                        <img src="./img/portfolio-slider-pic-4.jpg" alt="Слайд 4">
+                                    </a>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="portfolio__item portfolio-triggers">
+                            <h4 class="portfolio-triggers__title">
+                                Примеры выполненных работ
+                            </h4>
+                            <div class="portfolio-triggers__wrapper">
+                                <div class="portfolio-triggers__layout">
+                                    <a class="portfolio-trigger__item" href="#portfolio-tabs-1">
+                                        <div class="portfolio-triggers__item">
+                                            <img src="./img/portfolio-slider-pic-1.jpg" alt="Портфолио альбом" class="portfolio-triggers__pic">
+                                            <div class="portfolio-triggers__desc">
+                                                <div class="portfolio-triggers__desc-wrap">
+                                                    <div class="portfolio-triggers__upper">
+                                                        <span>Объект</span>
+                                                        <span>120 м² 85 дней</span>
+                                                    </div>
+                                                    <p>Можайское ш. 51</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="portfolio-trigger__item" href="#portfolio-tabs-2">
+                                        <div class="portfolio-triggers__item">
+                                            <img src="./img/portfolio-slider-pic-2.jpg" alt="Портфолио альбом" class="portfolio-triggers__pic">
+                                            <div class="portfolio-triggers__desc">
+                                                <div class="portfolio-triggers__desc-wrap">
+                                                    <div class="portfolio-triggers__upper">
+                                                        <span>Объект</span>
+                                                        <span>34 м² 40 дней</span>
+                                                    </div>
+                                                    <p>Ленина, 12</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="portfolio-trigger__item" href="#portfolio-tabs-3">
+                                        <div class="portfolio-triggers__item">
+                                            <img src="./img/portfolio-slider-pic-3.jpg" alt="Портфолио альбом" class="portfolio-triggers__pic">
+                                            <div class="portfolio-triggers__desc">
+                                                <div class="portfolio-triggers__desc-wrap">
+                                                    <div class="portfolio-triggers__upper">
+                                                        <span>Объект</span>
+                                                        <span>77 м² 67 дней</span>
+                                                    </div>
+                                                    <p>Пр. Дзержинского, 22</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="portfolio-trigger__item" href="#portfolio-tabs-4">
+                                        <div class="portfolio-triggers__item">
+                                            <img src="./img/portfolio-slider-pic-4.jpg" alt="Портфолио альбом" class="portfolio-triggers__pic">
+                                            <div class="portfolio-triggers__desc">
+                                                <div class="portfolio-triggers__desc-wrap">
+                                                    <div class="portfolio-triggers__upper">
+                                                        <span>Объект</span>
+                                                        <span>22 м² 23 дней</span>
+                                                    </div>
+                                                    <p>Б.Богаткова, 24</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="portfolio-trigger__item" href="#portfolio-tabs-5">
+                                        <div class="portfolio-triggers__item">
+                                            <img src="./img/portfolio-slider-pic-5.jpg" alt="Портфолио альбом" class="portfolio-triggers__pic">
+                                            <div class="portfolio-triggers__desc">
+                                                <div class="portfolio-triggers__desc-wrap">
+                                                    <div class="portfolio-triggers__upper">
+                                                        <span>Объект</span>
+                                                        <span>87 м² 85 дней</span>
+                                                    </div>
+                                                    <p>Затулинка, 23</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="portfolio-trigger__item" href="#portfolio-tabs-6">
+                                        <div class="portfolio-triggers__item">
+                                            <img src="./img/portfolio-slider-pic-6.jpg" alt="Портфолио альбом" class="portfolio-triggers__pic">
+                                            <div class="portfolio-triggers__desc">
+                                                <div class="portfolio-triggers__desc-wrap">
+                                                    <div class="portfolio-triggers__upper">
+                                                        <span>Объект</span>
+                                                        <span>62 м² 45 дней</span>
+                                                    </div>
+                                                    <p>Столетова, 25</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="portfolio-trigger__item" href="#portfolio-tabs-7">
+                                        <div class="portfolio-triggers__item">
+                                            <img src="./img/portfolio-slider-pic-7.jpg" alt="Портфолио альбом" class="portfolio-triggers__pic">
+                                            <div class="portfolio-triggers__desc">
+                                                <div class="portfolio-triggers__desc-wrap">
+                                                    <div class="portfolio-triggers__upper">
+                                                        <span>Объект</span>
+                                                        <span>65 м² 85 дней</span>
+                                                    </div>
+                                                    <p>Лубянка, 1</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="portfolio-trigger__item" href="#portfolio-tabs-8">
+                                        <div class="portfolio-triggers__item">
+                                            <img src="./img/portfolio-slider-pic-8.jpg" alt="Портфолио альбом" class="portfolio-triggers__pic">
+                                            <div class="portfolio-triggers__desc">
+                                                <div class="portfolio-triggers__desc-wrap">
+                                                    <div class="portfolio-triggers__upper">
+                                                        <span>Объект</span>
+                                                        <span>32 м² 85 дней</span>
+                                                    </div>
+                                                    <p>Красный пр-т, 52</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section calculator" id="calculator">
+            <div class="container">
+                <h2 class="calculator__title title-h2">
+                    Расчитать стоимость ремонта
+                </h2>
+                <p class="calculator__desc">
+                    Укажите параметры недвижимости и узнайте стоимость ремонта онлайн
+                </p>
+                <div class="calculator__wrapper">
+                    <div class="calculator__select calculator__block">
+                        <div class="select">
+                            <label for="select-1" class="select__label">Тип недвижимости</label>
+                            <select id="select-1" name="Тип недвижимости" class="select-item">
+                                <option value="Новостройка">
+                                    Новостройка
+                                </option>
+                                <option value="Вторичное жилье">
+                                    Вторичное жилье
+                                </option>
+                                <option value="Загородный дом">
+                                    Загородный дом
+                                </option>
+                            </select>
+                        </div>
+                        <div class="select">
+                            <label for="select-2" class="select__label">Тип ремонта</label>
+                            <select id="select-2" name="Тип ремонта" class="select-item" onchange="percentIncrease()" />
+                                <option value="3000">
+                                    Черновой
+                                </option>
+                                <option value="6000">
+                                    Капитальный
+                                </option>
+                                <option value="10000">
+                                    Дизайнерский
+                                </option>
+                            </select>
+                        </div>
+                        <div class="select select-range">
+                            <label for="select-3" class="select__label">Площадь помещения, м<sup style="vertical-align: super;font-size: smaller;">2</sup></label>
+                            <input id="num" type=number min="0" max="200" value="0" oninput="percentIncrease()" />
+                            <input id="range" type="range" id="select-3" min="0" max="200" value="0" name="Площадь помещения" oninput="percentIncrease()" />
+                        </div>
+                        <div class="select">
+                            <label for="select-4" class="select__label">Когда планируете начать </label>
+                            <select id="select-4" name="Когда планируете начать" class="select-item">
+                                <option value="Через неделю">
+                                    Через неделю
+                                </option>
+                                <option value="Через месяц">
+                                    Через месяц
+                                </option>
+                                <option value="Позже">
+                                    Позже
+                                </option>
+                            </select>
+                        </div>
+                        <div class="select">
+                            <label for="select-5" class="select__label">Отправить расчет</label>
+                            <select id="select-5" name="Отправить расчет" class="select-item">
+                                <option value="WhatsApp">
+                                    WhatsApp
+                                </option>
+                                <option value="СМС">
+                                    СМС
+                                </option>
+                                <option value="По звонку">
+                                    По звонку
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="calculator__form calculator__block">
+                        <div class="calculator__form-wrapper">
+                            <div class="calculator__form-up">
+                                <div class="calculator__form-price">
+                                    <div class="calculator__form-price-wrap">
+                                        <p>Стоимость</p>
+                                        <span class="calculator__form-cost" id="mainresults">0</span> <span>₽</span>
+                                    </div>
+                                    <div class="calculator__form-price-wrap">
+                                        <p>Срок выполнения ≈</p>
+                                        <span class="calculator__form-cost" id="how-many">0</span> <span>дней</span>
+                                    </div>
+                                </div>
+                                <div class="calculator__form-lists">
+                                    <ul>
+                                        <li>
+                                            Стоимость и срок фиксируются в договоре
+                                        </li>
+                                        <li>
+                                            Оплата после выполнения работ
+                                        </li>
+                                        <li>
+                                            Гарантия 12 месяцев
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="calculator__form-down">
+                                <div class="calculator__form-prices">
+                                    <form action="#!" class="calculator__form-form">
+                                        <input type="text" name="name" placeholder="Ваше имя" class="calculator__form-input" required="required">
+                                        <input type="tel" name="phone" placeholder="Ваш номер телефона" class="calculator__form-input" required="required">
+                                        <button type="submit" class="calculator__form-btn">Оставить заявку</button>
+                                        <div class="check-wrapper">
+                                            <input type="checkbox" checked="checked" class="privacy-check"  id="privacy-check" />
+                                            <label for="privacy-check">Я даю согласие на обработку <a href="#" target="_blank">персональных данных</a></label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section reviews" id="reviews">
+            <div class="container">
+                <h2 class="reviews__title title-h2">
+                    Отзывы клиентов
+                </h2>
+                <div class="reviews__slider">
+                    <div class="slide">
+                        <a href="./img/comment-1.jpg" data-fancybox="gallery">
+                            <img src="./img/comment-1.jpg" alt="Слайд 1">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="./img/comment-2.jpg" data-fancybox="gallery">
+                            <img src="./img/comment-2.jpg" alt="Слайд 2">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="./img/comment-3.jpg" data-fancybox="gallery">
+                            <img src="./img/comment-3.jpg" alt="Слайд 3">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="./img/comment-4.jpg" data-fancybox="gallery">
+                            <img src="./img/comment-4.jpg" alt="Слайд 4">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="./img/comment-1.jpg" data-fancybox="gallery">
+                            <img src="./img/comment-1.jpg" alt="Слайд 1">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="./img/comment-2.jpg" data-fancybox="gallery">
+                            <img src="./img/comment-2.jpg" alt="Слайд 2">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="./img/comment-3.jpg" data-fancybox="gallery">
+                            <img src="./img/comment-3.jpg" alt="Слайд 3">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="./img/comment-4.jpg" data-fancybox="gallery">
+                            <img src="./img/comment-4.jpg" alt="Слайд 4">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section sertificate" id="sertificate">
+            <div class="container">
+                <h2 class="sertificate__title title-h2">
+                    Сертификаты и лицензии
+                </h2>
+                <div class="sertificate__wrapper">
+                    <div class="sertificate__left">
+                        <p class="sertificate__left-desc">
+                            Компания Столичный мастер имеет допуски ко всем строительным работам, что обеспечивает безопасность и высокое качество услуг
+                        </p>
+                    </div>
+                    <div class="sertificate__right">
+                        <a href="./img/sertificate-1.jpg" class="sertificate__right-img" data-fancybox="gallery">
+                            <img src="./img/sertificate-1.jpg" alt="Сертификат" class="sertificate__right-pic">
+                        </a>
+                        <a href="./img/sertificate-2.jpg" class="sertificate__right-img" data-fancybox="gallery">
+                            <img src="./img/sertificate-2.jpg" alt="Сертификат" class="sertificate__right-pic">
+                        </a>
+                        <a href="./img/sertificate-3.jpg" class="sertificate__right-img" data-fancybox="gallery">
+                            <img src="./img/sertificate-3.jpg" alt="Сертификат" class="sertificate__right-pic">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section faq" id="faq">
+            <div class="container">
+                <h2 class="faq__title title-h2">
+                    Ответы на часто задаваемые вопросы
+                </h2>
+            </div>
+            <div class="faq__wrapper">
+                <div class="container">
+                    <div class="acc">
+                        <div class="acc__card">
+                        <div class="acc__title">Как происходит оплата?</div>
+                        <div class="acc__panel">
+                            Все работы будут выполнять квалифицированные специалисты. Любой этап работ может быть проверен.
+                        </div>
+                        </div>
+                        <div class="acc__card">
+                        <div class="acc__title">Цены в смете окончательные?</div>
+                        <div class="acc__panel">
+                            Все работы будут выполнять квалифицированные специалисты. Любой этап работ может быть проверен.
+                        </div>
+                        </div>
+                        <div class="acc__card">
+                        <div class="acc__title">Как я смогу убедиться в качестве выполнения?</div>
+                        <div class="acc__panel">
+                            Все работы будут выполнять квалифицированные специалисты. Любой этап работ может быть проверен.
+                        </div>
+                        </div>
+                        <div class="acc__card">
+                        <div class="acc__title">Кто будет ответственен за качество работ?</div>
+                        <div class="acc__panel">
+                            Все работы будут выполнять квалифицированные специалисты. Любой этап работ может быть проверен.
+                        </div>
+                        </div>
+                        <div class="acc__card">
+                        <div class="acc__title">Как можно следить за ходом ремонта?</div>
+                        <div class="acc__panel">
+                            Все работы будут выполнять квалифицированные специалисты. Любой этап работ может быть проверен.
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__layout">
+                    <img src="./img/faq-pic.png" alt="Часто задаваемые вопросы">
+                </div>
+            </div>
+        </section>
+
+        <section class="section map" id="map">
+            <div class="container">
+                <h2 class="map__title title-h2">
+                    Контакты
+                </h2>
+                <div class="map__contact contact">
+                    <div class="contact__wrapper">
+                        <div class="contact__item contact__item-1">
+                            <a href="tel:+79999999999" class="contact__phone">+7 (999) 999-99-99</a>
+                        </div>
+                        <div class="contact__item contact__item-2">
+                            <p class="contact__time">без выходных с 8:00 до 20:00</p>
+                        </div>
+                        <div class="contact__item contact__item-3">
+                            <p class="contact__time">г. Новосибирск, ул. Ленина, 1 офис 1</p>
+                        </div>
+                    </div>
+                    <div class="contact__social">
+                        <div class="socials__item">
+                            <a href="#!" class="socials__link">
+                                <img src="./img/svg/telegram-ico.svg" alt="Telegram">
+                            </a>
+                        </div>
+                        <div class="socials__item">
+                            <a href="#!" class="socials__link">
+                                <img src="./img/svg/whatsapp-ico.svg" alt="WhatsApp">
+                            </a>
+                        </div>
+                        <div class="socials__item">
+                            <a href="#!" class="socials__link">
+                                <img src="./img/svg/instagram-ico.svg" alt="Instagram">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A59d12ae0081f1f7752d224cde8db5b9239f1e77a4e2e3db269e54b0f8f425f94&amp;source=constructor" width="100%" height="317" frameborder="0"></iframe>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-hidden">
+                <div class="footer-hidden-up">
+                    <img src="./img/svg/footer-logo.svg" alt="Логотип футер" class="footer__pic">
+                    <div class="contact__social">
+                        <div class="socials__item">
+                            <a href="#!" class="socials__link">
+                                <img src="./img/svg/telegram-ico.svg" alt="Telegram">
+                            </a>
+                        </div>
+                        <div class="socials__item">
+                            <a href="#!" class="socials__link">
+                                <img src="./img/svg/whatsapp-ico.svg" alt="WhatsApp">
+                            </a>
+                        </div>
+                        <div class="socials__item">
+                            <a href="#!" class="socials__link">
+                                <img src="./img/svg/instagram-ico.svg" alt="Instagram">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-hidden-down">
+                    <div class="contact__wrapper">
+                        <div class="contact__item contact__item-1">
+                            <a href="tel:+79999999999" class="contact__phone">+7 (999) 999-99-99</a>
+                        </div>
+                        <div class="contact__item contact__item-2">
+                            <p class="contact__time">без выходных с 8:00 до 20:00</p>
+                        </div>
+                        <div class="contact__item contact__item-3">
+                            <p class="contact__time">г. Новосибирск, ул. Ленина, 1 офис 1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__wrapper">
+                <a href="/" class="footer__logo">
+                    <img src="./img/svg/footer-logo.svg" alt="Логотип футер" class="footer__pic">
+                </a>
+                <div class="footer__menu navigation">
+                    <nav class="navigation__menu">
+                        <ul class="navigation__items">
+                            <li class="navigation__item">
+                                <a href="#about" class="navigation__link js-scroll">
+                                    О нас
+                                </a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#price" class="navigation__link js-scroll">
+                                    Цены
+                                </a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#steps" class="navigation__link js-scroll">
+                                    Качество
+                                </a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#portfolio" class="navigation__link js-scroll">
+                                    Галерея
+                                </a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#calculator" class="navigation__link js-scroll">
+                                    Калькулятор
+                                </a>    
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#reviews" class="navigation__link js-scroll">
+                                    Отзывы
+                                </a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#map" class="navigation__link js-scroll">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div> 
+            </div>
+        </div>
+    </footer>
+    <div class="popup">
+        <div class="popup-layout"></div>
+        <div class="popup__wrapper">
+            <span class="popup__close"></span>
+            <h3 class="popup__title">Бесплатная консультация</h3>
+            <p class="popup__desc">Оставьте телефон и наш менеджер проконсультирует вас по всем вопросам в ближайшее время.</p> 
+            <form action="#!" class="popup__form form-popup">
+                <input type="text" class="form-popup__input" name="name" required="required" placeholder="Ваше имя">
+                <input type="tel" class="form-popup__input" name="phone" required="required" placeholder="Ваш номер телефона">
+                <button class="form-popup__btn" type="submit">Получить консультацию</button>
+            </form>
+        </div>   
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/jquery.fancybox.min.js"></script>
+    <script src="./js/choices.min.js"></script>
+    <script src="./js/main.js"></script>
+</body> 
+</html>
